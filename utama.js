@@ -20,29 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 3. Live Clock Function
-    function updateClock() {
-        const clockEl = document.getElementById("live-clock");
-        if (!clockEl) return;
-        const now = new Date();
-        const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu"];
-        const months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
-        
-        const dayName = days[now.getDay()];
-        const date = now.getDate();
-        const monthName = months[now.getMonth()];
-        const year = now.getFullYear();
-        const time = now.toLocaleTimeString("id-ID", { hour: "2-digit", minute: "2-digit", second: "2-digit" });
-
-        clockEl.innerHTML = `
-            <div class="date">${dayName}, ${date} ${monthName} ${year}</div>
-            <div class="time">${time}</div>
-        `;
-    }
-    setInterval(updateClock, 1000);
-    updateClock();
-
-    // 4. Scroll Header Shadow Effect
+    // 3. Scroll Header Shadow Effect
     const header = document.querySelector("header");
     window.addEventListener("scroll", () => {
         if (header) {
@@ -50,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 5. Scroll Intersection Observer (Animations)
+    // 4. Scroll Intersection Observer (Animations)
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -62,20 +40,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll(".fade-in, .fade-in-left, .fade-in-right, .visi, .misi").forEach(el => observer.observe(el));
 });
 
-// Accordion Handler Universal (Single Definition)
+// ACCORDION HANDLER (PERBAIKAN AGAR TIDAK TERPOTONG DI HP)
 function toggleAccordion(id) {
     const content = document.getElementById(id);
     if (!content) return;
 
     const isOpen = content.classList.contains("show");
-    
-    // Tutup accordion sejenis (optional)
+
+    // Tutup semua accordion lain
     document.querySelectorAll('.accordion-content').forEach(item => {
         item.classList.remove('show');
+        item.style.maxHeight = null;
     });
 
+    // Buka accordion yang diklik jika sebelumnya tertutup
     if (!isOpen) {
         content.classList.add("show");
+        // Atur maxHeight sesuai total tinggi konten yang ada di dalamnya
+        content.style.maxHeight = content.scrollHeight + 500 + "px";
     }
 }
 
