@@ -270,7 +270,7 @@ section {
     background: #fff; 
     border-radius: 8px; 
     text-align: center;
-    padding: 10px;
+    padding: 0 10px;
 }
 
 .accordion-content p {
@@ -288,8 +288,8 @@ section {
 }
 
 .accordion-content.show { 
-    max-height: 2000px; 
-    padding: 20px;
+    max-height: max-content; 
+    padding: 20px 10px;
 }
 
 .accordion-content img {
@@ -715,15 +715,15 @@ footer {
 }
 
 /* RESPONSIVE */
-/* RESPONSIVE (MOBILE) */
 .menu-toggle {
-    display: none; /* Sembunyikan di tampilan desktop */
+    display: none; 
     font-size: 24px;
     color: #000;
     cursor: pointer;
     padding: 5px 10px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 768px) {
     .visimisi { 
         flex-direction: column; 
@@ -754,5 +754,22 @@ footer {
     }
     .main-menu li:hover .sub-menu {
         display: block;
+    }
+    .anggota-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px;
+        padding: 5px;
+    }
+    .anggota-item {
+        width: 100%;
+        padding: 10px;
+    }
+    .anggota-item img {
+        width: 70px;
+        height: 70px;
+    }
+    .anggota-item p {
+        font-size: 12px;
     }
 }
