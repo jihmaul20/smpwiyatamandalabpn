@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMP Wiyata Mandala</title>
+    <link rel="icon" type="image/png" href="gbr/logo wm.jpg">
+    <link rel="stylesheet" href="utama.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="gbr/logo wm.jpg" alt="Logo WM"></a>
+        </div>
+
+        <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <nav>
+            <ul class="main-menu">
+                <li><a href="#beranda">Beranda</a></li>
+                <li>
+                    <a href="#profil">Profil &#9662;</a>
+                    <ul class="sub-menu">
+                        <li><a href="#visimisi">Visi Misi</a></li>
+                        <li><a href="#struktur">Pendidik & Non Pendidik</a></li>
+                        <li><a href="#program">Program Sekolah</a></li>
+                        <li><a href="#ekstrakurikuler">Ekstrakurikuler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#adiwiyata">Adiwiyata</a></li>
+                <li><a href="#galeri">Galeri</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <section id="beranda">
+        <div class="hero-content">
+            <h1>SMP<br>WIYATA MANDALA</h1>
+            <p>BALIKPAPAN</p>
+            <a href="dokumentasi.html" class="btn">Dokumentasi WM</a>
+            <a href="dokumentasi-adiwiyata.html" class="btn">Dokumentasi Adiwiyata</a>
+        </div>
+    </section>
+
+    <!-- MARQUEE 1 -->
+    <marquee behavior="scroll" direction="left" class="marquee">
+        "Selamat Datang di SMP Wiyata Mandala Balikpapan"
+    </marquee>
+
+    <!-- PROFIL -->
+    <section id="profil"></section>
+    <section id="visimisi" class="visimisi">
+        <div class="visi fade-in-left">
+            <h2>Visi</h2>
+            <p>Mencetak generasi unggul, cerdas, beriman, dan berbudaya lingkungan</p>
+        </div>
+        <div class="misi fade-in-right">
+            <h2>Misi</h2>
+            <p id="misi-text">
+                1.	Menjadikan sumber daya manusia yang berkarakter, kreatif, inovatif dan efektif
+                2.	Menjadikan Pendidikan yang berkualitas dalam bidang akademik dan non akademik
+                3.	Menjadikan sekolah yang bersih, hijau, indah, aman dan nyaman.
+            </p>
+        </div>
+    </section>
+
+        <!-- PROFIL -->
+        <!-- Struktur Organisasi -->
+        <section id="struktur">
+            <h2>Pendidik & Non Pendidik</h2>
+            <div class="hierarchy">
+                <div class="level">
+                    <div class="node" onclick="toggleAccordion('kepsek')">kepala Sekolah</div>
+                </div>
+                <div id="kepsek" class="accordion-content">
+                    <img src="gbr/sumiyati.jpeg" alt="kepsek">
+                    <p>Sumiyati, S.Pd</p>
+                    <a href="utama.html" target="_blank">Instagram</a>
+                </div>
+                
+                <div class="level">
+                    <div class="node" onclick="toggleAccordion('sekretaris')">Sekretaris</div>
+                    <div class="node" onclick="toggleAccordion('bendahara')">Bendahara</div>
+                    <div class="node" onclick="toggleAccordion('perpus')">Perpustakaan</div>
+                </div>
+                <div id="sekretaris" class="accordion-content">
+                    <img src="gbr/logo wm.jpg" alt="sekretaris">
+                    <p>Esya</p>
+                    <a href="gbr/logo wm.jpg" target="_blank">Instagram</a>
+                </div>
+                <div id="bendahara" class="accordion-content">
+                    <img src="gbr/logo wm.jpg" alt="bendahara">
+                    <p>Windy</p>
+                    <a href="gbr/logo wm.jpg" target="_blank">Instagram</a>
+                </div>
+                <div id="perpus" class="accordion-content">
+                    <img src="gbr/logo wm.jpg" alt="perpus">
+                    <p>Sherlina</p>
+                    <a href="gbr/logo wm.jpg" target="_blank">Instagram</a>
+                </div>
+
+                <div class="level">
+                    <div class="anggota">
+                        <div class="node" onclick="toggleAccordion('anggota')">Pendidik</div>
+                    </div>
+                </div>
+                <div id="anggota" class="accordion-content">
+                    <div class="anggota-grid">
+                        <div class="anggota-item">
+                            <img src="gbr/mariyati.jpeg" alt="p1">
+                            <p>Mariyati, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/fathoni.jpeg" alt="p2">
+                            <p>H. Khairul Fathoni, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/subuhan.jpeg" alt="p3">
+                            <p>Subuhan, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/suhardi.jpeg" alt="p4">
+                            <p>Suhardi, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/rita.jpeg" alt="p5">
+                            <p>Margaritha, M.Th</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p5">
+                            <p>Baharuddin, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/zaen.jpeg" alt="p6">
+                            <p>M. Zainul Ridho, S.E</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/rokib.jpeg" alt="p7">
+                            <p>Abdurrokib, S.Pd.I</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p8">
+                            <p>Hadijah, M.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p9">
+                            <p>belum tau nama lengkap bu Anisa :></p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/iin.jpeg" alt="p10">
+                            <p>Iin Raodah, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p11">
+                            <p>Restu Oktaviani, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/bunga.jpeg" alt="p12">
+                            <p>Bunga Arnila, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/jihan.jpeg" alt="p13">
+                            <p>Jihan Rizky Maulidina, S.Kom</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p14">
+                            <p>Farrah Naila Tabina, S.Pd</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                        <div class="anggota-item">
+                            <img src="gbr/logo wm.jpg" alt="p4">
+                            <p>Agus Jumino, S.Pd.I</p>
+                            <a href="utama.html" target="_blank">Instagram</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROGRAM SEKOLAH -->
+    <section id="program">
+        <h2>Program Unggulan Sekolah</h2>
+        <p style="color: #666; margin-top: 5px;">Mewujudkan ekosistem belajar yang adaptif, berkarakter, dan berwawasan lingkungan.</p>
+        
+        <div class="program-grid">
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-book"></i></div>
+                <h3>Keagamaan</h3>
+                <p>....</p>
+            </div>
+            <div class="program-card">
+                <div class="program-icon"><i class="fas fa-home"></i></div>
+                <h3>Jum'at</h3>
+                <p>...</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Adiwiyata -->
+    <section id="adiwiyata" class="adiwiyata-section">
+        <div class="adiwiyata-content">
+            <div class="adiwiyata-badge">
+                <i class="fas fa-leaf"></i> Sekolah Peduli & Berbudaya Lingkungan
+            </div>
+            <h2>ADIWIYATA</h2>
+            <p>Mewujudkan lingkungan sekolah yang bersih, hijau, asri, dan berkelanjutan untuk kenyamanan belajar seluruh warga SMP Wiyata Mandala.</p>
+            
+            <a href="adiwiyata.html" target="_parent" class="cta-button">
+                <span>Jelajahi Adiwiyata Kami</span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+                    <path fill="none" d="M0 0h24v24H0z" />
+                    <path fill="currentColor" d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z" />
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- DOKUMENTASI -->
+    <section id="galeri">
+        <h2>Galeri WM</h2>
+
+        <!-- Galeri Grid -->
+        <div class="galeri-grid">
+            <div class="galeri-item">
+                <img src="gbr/logo wm.jpg" alt="Kegiatan 1" onclick="openModal(this.src, this.alt)">
+            </div>
+            <div class="galeri-item">
+                <img src="gbr/logo wm.jpg" alt="Kegiatan 2" onclick="openModal(this.src, this.alt)">
+            </div>
+            <div class="galeri-item">
+                <img src="gbr/logo wm.jpg" alt="Kegiatan 3" onclick="openModal(this.src, this.alt)">
+            </div>
+        </div>
+        
+        <!-- Tombol Navigasi -->
+        <div class="dokumentasi-footer">
+            <a href="dokumentasi.html" class="btn-dokumentasi">Semua Galeri</a>
+        </div>
+        
+        <!-- Modal Preview Gambar -->
+        <div id="modal" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modal-img">
+            <div id="caption"></div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <div class="contact-icons">
+            <a href="mailto:smpwiyatamandala@gmail.com?subject=Informasi%20IRMA&body=Halo%2C%20saya%20ingin%20menanyakan..." class="contact-button email">
+                <i class="fas fa-envelope">Email</i> 
+            </a>
+            <a href="https://www.instagram.com/smpwiyatamandala/" target="_blank" class="contact-button instagram">
+                <i class="fab fa-instagram">Instagram</i> 
+            </a>
+            <a href="https://www.tiktok.com/@smpwiyatamandalabpn" class="contact-button tiktok" style="color: black;"">
+                <i class="fab fa-tiktok">Tiktok</i> 
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=6281253427898&text=Pendidikan" target="_parent" class="contact-button whatsapp">
+                <i class="fab fa-whatsapp">whatsapp</i>
+            </a>
+        </div>
+    </section>
+
+    <!-- MARQUEE 2 -->
+    <marquee behavior="scroll" direction="left" class="marquee">
+        "Selamat Datang di SMP Wiyata Mandala"
+    </marquee>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="footer-container">
+
+            <!-- Kolom 1: Profil / Tentang Kami -->
+            <div class="footer-column">
+                <h3>SMP Wiyata Mandala</h3>
+                <p>Mencetak generasi unggul, cerdas, beriman, dan berbudaya lingkungan.</p>
+            </div>
+
+            <!-- Kolom 2: Navigasi Cepat -->
+            <div class="footer-column">
+                <h3>Navigasi Cepat</h3>
+                <ul class="footer-links">
+                    <li><a href="#beranda"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                    <li><a href="#profil"><i class="fas fa-chevron-right"></i> Profil</a></li>
+                    <li><a href="#adiwiyata"><i class="fas fa-chevron-right"></i> Adiwiyata</a></li>
+                    <li><a href="#galeri"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+                    <li><a href="#kontak"><i class="fas fa-chevron-right"></i> Kontak</a></li>
+                </ul>
+            </div>
+
+            <!-- Kolom 3: Media Sosial -->
+            <div class="footer-column">
+                <h3>Media Sosial</h3>
+                <p>Ikuti perkembangan dan kegiatan terbaru kami melalui media sosial resmi:</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/smpwiyatamandala/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://api.whatsapp.com/send?phone=6281253427898" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="mailto:smpwiyatamandala@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://www.tiktok.com/@smpwiyatamandalabpn" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lokasi Google Maps -->
+        <div class="footer-map">
+            <h3>Lokasi Sekolah</h3>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8527768574413!2d116.90737927448275!3d-1.260537435597498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df1443727a16b63%3A0xf93dfeaa29cee250!2sSMP%20Wiyata%20Mandala%20Balikpapan!5e0!3m2!1sid!2sid!4v1785647158214!5m2!1sid!2sid" 
+                width="100%" 
+                height="280" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>      
+        
+        <!-- Hak Cipta -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 SMP Wiyata Mandala Balikpapan. Semua Hak Dilindungi.</p>
+        </div>
+    </footer>    
+    <a href="https://wa.me/6281234567890" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal().reveal('.hero-content', { delay: 300, distance: '50px', origin: 'bottom' });
+    </script>
+    <script src="utama.js"></script>
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adiwiyata - SMP Wiyata Mandala Balikpapan</title>
+    <link rel="icon" type="image/png" href="gbr/logo wm.jpg">
+    <link rel="stylesheet" href="adiwiyata.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="gbr/logo wm.jpg" alt="Logo WM">
+            <span class="logo-title">ADIWIYATA Wiyata Mandala Bpn</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="utama.html">Kembali ke Utama</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#program">Program</a></li>
+                <li><a href="#dokumentasi">Dokumentasi</a></li>
+                <li><a href="#dokumen">Unduh File</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-adiwiyata">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <span class="badge-leaf"><i class="fas fa-leaf"></i> Sekolah Peduli & Berbudaya Lingkungan</span>
+                <h1>Gerakan Adiwiyata</h1>
+                <p>Mewujudkan ekosistem sekolah yang hijau, asri, efisien energi, dan berkelanjutan untuk generasi mendatang.</p>
+                <div class="hero-btns">
+                    <a href="#dokumentasi" class="btn-primary"><i class="fas fa-images"></i> Lihat Dokumentasi</a>
+                    <a href="#dokumen" class="btn-secondary"><i class="fas fa-file-download"></i> Unduh Berkas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RINGKASAN CAPAIAN (STATS) -->
+    <section class="stats-section">
+        <div class="stats-container">
+            <div class="stat-card">
+                <i class="fas fa-tree"></i>
+                <h3 class="counter" data-target="150">0</h3>
+                <p>Pohon & Tanaman</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-recycle"></i>
+                <h3 class="counter" data-target="100">0</h3>
+                <p>% Daur Ulang Sampah</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-hands-helping"></i>
+                <h3 class="counter" data-target="12">0</h3>
+                <p>Kader Adiwiyata</p>
+            </div>
+            <div class="stat-card">
+                <i class="fas fa-award"></i>
+                <h3>Mandiri</h3>
+                <p>Target Capaian</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG ADIWIYATA -->
+    <section id="tentang" class="section-container">
+        <div class="section-header">
+            <h2>Komitmen Lingkungan Kami</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-grid">
+            <div class="about-text">
+                <h3>Membangun Budaya Hijau dari Sekolah</h3>
+                <p>Program Adiwiyata di SMP Wiyata Mandala Balikpapan bertujuan untuk membentuk warga sekolah yang bertanggung jawab dalam upaya perlindungan dan pengelolaan lingkungan hidup melalui tata kelola sekolah yang baik.</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Pengelolaan sampah terpadu (Bank Sampah & Komposting)</li>
+                    <li><i class="fas fa-check-circle"></i> Pemeliharaan taman dan apotek hidup sekolah</li>
+                    <li><i class="fas fa-check-circle"></i> Penghematan energi air dan listrik secara efisien</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <img src="gbr/adiwiyata/awal1.jpeg" alt="Kegiatan Adiwiyata">
+            </div>
+        </div>
+    </section>
+
+    <!-- PROGRAM UNGGULAN -->
+    <section id="program" class="program-section">
+        <div class="section-header">
+            <h2>Program Kerja Adiwiyata</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="program-cards">
+            <div class="p-card">
+                <div class="icon-box"><i class="fas fa-seedling"></i></div>
+                <h3>Green House & Taman</h3>
+                <p>Budidaya tanaman hias, toga, dan pemeliharaan keasrian area belajar terbuka.</p>
+            </div>
+            <div class="p-card">
+                <div class="icon-box"><i class="fas fa-dumpster-fire"></i></div>
+                <h3>Bank Sampah WM</h3>
+                <p>Pemilahan sampah organik & anorganik serta kreasi daur ulang siswa.</p>
+            </div>
+            <div class="p-card">
+                <div class="icon-box"><i class="fas fa-solar-panel"></i></div>
+                <h3>Konservasi Energi</h3>
+                <p>Kampanye hemat air, pemanfaatan cahaya alami, dan pengurangan plastik sekali pakai.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DOKUMENTASI & GALERI -->
+    <section id="dokumentasi" class="section-container">
+        <div class="section-header">
+            <h2>Dokumentasi Kegiatan</h2>
+            <p>Galeri foto aksi nyata warga sekolah menjaga lingkungan</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- Filter Tab -->
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="penanaman">Penanaman</button>
+            <button class="filter-btn" data-filter="pengelolaan">Pengelolaan Sampah</button>
+            <button class="filter-btn" data-filter="kreasi">Daur Ulang</button>
+        </div>
+
+        <!-- Grid Galeri Utama -->
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="penanaman">
+                <img src="gbr/logo wm.jpg" alt="Aksi Penanaman Pohon">
+                <div class="gallery-overlay">
+                    <h4>Penanaman Pohon</h4>
+                    <p>Aksi hijau kader adiwiyata</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="pengelolaan">
+                <img src="gbr/logo wm.jpg" alt="Pemisahan Sampah">
+                <div class="gallery-overlay">
+                    <h4>Pilah Sampah</h4>
+                    <p>Edukasi pemisahan sampah</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="kreasi">
+                <img src="gbr/logo wm.jpg" alt="Kerajinan Daur Ulang">
+                <div class="gallery-overlay">
+                    <h4>Kerajinan Daur Ulang</h4>
+                    <p>Hasil karya kreatif siswa</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- LINK LIHAT SELENGKAPNYA (Diubah ke elemen <a>) -->
+        <div class="more-btn-wrapper">
+            <!-- Ganti 'galeri-dokumentasi.html' dengan file/halaman tujuan -->
+            <a href="dokumentasi-adiwiyata.html" class="btn-more">
+                Lihat Selengkapnya <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- BERKAS / FILE DOWNLOAD -->
+    <section id="dokumen" class="document-section">
+        <div class="section-header">
+            <h2>Berkas & Dokumen Adiwiyata</h2>
+            <p>Unduh file administrasi, laporan, dan panduan Adiwiyata sekolah</p>
+            <div class="underline"></div>
+        </div>
+
+        <div class="document-grid">
+            <div class="doc-card">
+                <div class="doc-icon"><i class="fas fa-file-pdf"></i></div>
+                <div class="doc-info">
+                    <h4>SK Kader Adiwiyata Sekolah</h4>
+                    <p>PDF • 1.2 MB</p>
+                </div>
+                <a href="file/sk_kader_adiwiyata.pdf" class="btn-download" download="SK_Tim_Adiwiyata_SMPWMbpn.pdf">
+                    <i class="fas fa-download"></i> Unduh
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL PREVIEW GAMBAR -->
+    <div id="image-modal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="img-modal-src" alt="Preview Gambar">
+        <div id="modal-caption"></div>
+    </div>
+
+    <!-- FOOTER Sederhana -->
+    <footer class="adiwiyata-footer">
+        <p>&copy; 2026 Tim Adiwiyata SMP Wiyata Mandala Balikpapan.</p>
+    </footer>
+
+    <script src="adiwiyata.js"></script>
+</body>
+</html>

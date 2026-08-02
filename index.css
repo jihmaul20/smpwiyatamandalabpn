@@ -1,0 +1,149 @@
+@media (max-width: 768px) {
+    section.home {
+        flex-direction: column; 
+        padding: 20px; 
+    }
+}
+
+header {
+    background: linear-gradient(45deg, rgba(0, 135, 62, 0.8), rgba(255, 204, 0, 0.8));
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        background-position: -100%;
+    }
+    to {
+        background-position: 100%;
+    }
+}
+
+.btn-logo {
+    width: 100%; 
+    max-width: 300px;
+    height: auto; 
+    padding-bottom: 10px; 
+    border: none; 
+    background: transparent; 
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: updown 3s linear infinite;
+}
+
+@keyframes updown {
+    0%, 100% {
+        transform: translateY(3rem);
+    }
+    50% {
+        transform: translateY(-2.5rem);
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Pastikan canvas di belakang konten */
+}
+
+section.home {
+    position: relative;
+    z-index: 1; /* Pastikan konten di atas canvas */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0; 
+}
+
+/* =========================================================
+   PENYESUAIAN FONT & WARNA UNTUK TULISAN SMP WIYATA MANDALA
+   ========================================================= */
+
+.title1 {
+    font-size: 1.6rem;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Arial Black', sans-serif;
+    text-align: center;
+    color: #00873e; /* Hijau khas logo */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.title2 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    text-align: center;
+    color: #ffffff; /* Putih bersih */
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.6); /* Bayangan agar terbaca jelas */
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.title3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    font-family: 'Trebuchet MS', 'Arial Black', sans-serif;
+    text-align: center;
+    color: #d4a000; /* Warna kuning/emas dari logo */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* ========================================================= */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    background: linear-gradient(45deg, rgba(0, 135, 62, 0.6), rgba(255, 204, 0, 0.6));
+    animation: gradient-animation 1s infinite alternate ease-in-out;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+@keyframes gradient-animation {
+    5% {
+        background: linear-gradient(45deg, rgba(0, 135, 62, 0.6), rgba(255, 204, 0, 0.6));
+    }
+    25% {
+        background: linear-gradient(45deg, rgba(0, 135, 62, 0.5), rgba(255, 204, 0, 0.7));
+    }
+    50% {
+        background: linear-gradient(45deg, rgba(0, 135, 62, 0.4), rgba(255, 204, 0, 0.8));
+    }
+    75% {
+        background: linear-gradient(45deg, rgba(0, 135, 62, 0.7), rgba(255, 204, 0, 0.5));
+    }
+    100% {
+        background: linear-gradient(45deg, rgba(0, 135, 62, 0.6), rgba(255, 204, 0, 0.6));
+    }
+}

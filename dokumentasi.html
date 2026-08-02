@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokumentasi Kegiatan - SMP Wiyata Mandala</title>
+    <link rel="icon" type="image/png" href="gbr/logo wm.jpg">
+    <link rel="stylesheet" href="dokumentasi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <a href="utama.html">
+                <img src="gbr/logo wm.jpg" alt="Logo WM">
+            </a>
+            <span class="logo-title">SMP Wiyata Mandala</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="utama.html">Kembali ke Utama</a></li>
+                <li><a href="adiwiyata.html">Adiwiyata</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTAINER -->
+    <main class="dokumentasi-page">
+        <!-- HEADER SECTION -->
+        <div class="page-header">
+            <span class="badge-tag"><i class="fas fa-photo-video"></i> Galeri & Media</span>
+            <h2>Dokumentasi Kegiatan Sekolah</h2>
+            <p>Kumpulan potret momen, aksi siswa, serta ragam kegiatan operasional dan ekstrakurikuler di SMP Wiyata Mandala Balikpapan.</p>
+            <div class="underline"></div>
+        </div>
+
+        <!-- FILTER TAB -->
+        <div class="filter-wrapper">
+            <button class="filter-btn active" data-category="all">
+                <i class="fas fa-th-large"></i> Semua
+            </button>
+            <button class="filter-btn" data-category="kegiatan">
+                <i class="fas fa-campground"></i> Kegiatan Sekolah
+            </button>
+            <button class="filter-btn" data-category="ramadhan">
+                <i class="fas fa-mosque"></i> Keagamaan / Ramadhan
+            </button>
+            <button class="filter-btn" data-category="sosial">
+                <i class="fas fa-hands-helping"></i> Akses Sosial
+            </button>
+            <button class="filter-btn" data-category="video">
+                <i class="fas fa-video"></i> Video
+            </button>
+        </div>
+
+        <!-- GALLERY GRID -->
+        <div class="gallery-grid">
+            
+            <!-- Item 1: Foto -->
+            <div class="gallery-card" data-category="kegiatan">
+                <div class="media-container" onclick="openModal('gbr/full/full1.jpg', 'Kegiatan Pembelajaran & Praktik Siswa')">
+                    <img src="gbr/full/full1.jpg" alt="Kegiatan Pembelajaran">
+                    <div class="media-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Kegiatan</span>
+                    <h4>Pembelajaran & Praktik Siswa</h4>
+                    <a href="gbr/full/full1.jpg" download="Kegiatan_WM_1.jpg" class="btn-download">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 2: Foto -->
+            <div class="gallery-card" data-category="ramadhan">
+                <div class="media-container" onclick="openModal('gbr/full/full2.jpg', 'Kegiatan Pesantren Kilat Ramadhan')">
+                    <img src="gbr/full/full2.jpg" alt="Kegiatan Ramadhan">
+                    <div class="media-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Ramadhan</span>
+                    <h4>Kegiatan Amaliyah Ramadhan</h4>
+                    <a href="gbr/full/full2.jpg" download="Ramadhan_WM.jpg" class="btn-download">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 3: Foto -->
+            <div class="gallery-card" data-category="sosial">
+                <div class="media-container" onclick="openModal('gbr/full/full3.jpg', 'Aksi Bantuan & Bakti Sosial')">
+                    <img src="gbr/full/full3.jpg" alt="Kegiatan Sosial">
+                    <div class="media-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Sosial</span>
+                    <h4>Bakti Sosial Warga Sekolah</h4>
+                    <a href="gbr/full/full3.jpg" download="Sosial_WM_1.jpg" class="btn-download">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 4: Foto -->
+            <div class="gallery-card" data-category="sosial">
+                <div class="media-container" onclick="openModal('gbr/full/full4.jpg', 'Sosialisasi & Santunan')">
+                    <img src="gbr/full/full4.jpg" alt="Kegiatan Sosial 2">
+                    <div class="media-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Sosial</span>
+                    <h4>Sosialisasi & Silaturahmi</h4>
+                    <a href="gbr/full/full4.jpg" download="Sosial_WM_2.jpg" class="btn-download">
+                        <i class="fas fa-download"></i> Unduh
+                    </a>
+                </div>
+            </div>
+
+            <!-- Item 5: Video -->
+            <div class="gallery-card" data-category="video">
+                <div class="media-container media-video">
+                    <video controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Browser Anda tidak mendukung pemutar video.
+                    </video>
+                </div>
+                <div class="card-body">
+                    <span class="card-tag">Video</span>
+                    <h4>Dokumentasi Video Kegiatan</h4>
+                    <a href="videos/video1.mp4" download="Video_Kegiatan_WM.mp4" class="btn-download">
+                        <i class="fas fa-download"></i> Unduh Video
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- MODAL PREVIEW -->
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-wrapper">
+            <img class="modal-content" id="modal-img" alt="Preview">
+            <div id="caption"></div>
+            <a id="download-btn-modal" href="#" download class="btn-download modal-dl">
+                <i class="fas fa-download"></i> Unduh Gambar
+            </a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 SMP Wiyata Mandala Balikpapan. Semua Hak Dilindungi.</p>
+    </footer>
+
+    <script src="dokumentasi.js"></script>
+</body>
+</html>
