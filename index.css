@@ -38,11 +38,11 @@ header {
 }
 
 @keyframes updown {
-    0%, 50% {
+    0%, 100% {
         transform: translateY(3rem);
     }
-    75% {
-        transform: translateY(-2.5rem);
+    50% {
+        transform: translateY(-0.5rem);
     }
 }
 
